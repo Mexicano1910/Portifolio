@@ -176,6 +176,7 @@ h1 {
 @media (max-width: 768px) {
   .cabecalho {
     padding: 5% 5%;
+    border: 1px solid var(--cor-terciaria);
   }
 
   .cabecalho__1 {
