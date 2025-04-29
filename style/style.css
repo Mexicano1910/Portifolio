@@ -50,7 +50,8 @@ body {
   gap: 82px;
 }
 
-.apresentacao__conteudo {
+.apresentacao__conteudo,
+.textos {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -73,14 +74,20 @@ body {
   color: var(--cor-terciaria);
 }
 
-.titulo__1__3 {
+.titulo__1__3,
+.link-projetos {
   font-family: var(--font-sucundaria);
   padding: 0px 0px;
   color: var(--cor-terciaria);
   text-decoration: none;
 }
 
-.paragrafo {
+.link-projetos {
+  font-size: 1.25rem;
+}
+
+.paragrafo,
+.texto-projetos {
   font-size: 1.62rem;
   font-family: var(--font-sucundaria);
 }
@@ -163,6 +170,23 @@ h1 {
   height: 50%;
 }
 
+.lista-projetos {
+  margin: 0 0 2em 0;
+  border: 1px solid var(--cor-terciaria);
+  padding: 1em;
+}
+
+.lista {
+  list-style-type: none;
+}
+
+.paragrafos-projetos {
+  font-size: 1rem;
+  font-family: var(--font-sucundaria);
+  color: var(--cor-secundaria);
+  margin: 0.5em 0 0 0;
+}
+
 .roda-pe {
   padding: 24px;
   color: var(--cor-primaria);
@@ -176,6 +200,7 @@ h1 {
 @media (max-width: 768px) {
   .cabecalho {
     padding: 5% 5%;
+    border: 1px solid var(--cor-terciaria);
   }
 
   .cabecalho__1 {
@@ -188,8 +213,13 @@ h1 {
     padding: 5% 5%;
   }
 
-  .apresentacao__conteudo {
+  .apresentacao__conteudo,
+  .textos {
     width: 100%;
+  }
+
+  .titulo {
+    padding-top: 2em;
   }
 
   .titulo {
@@ -214,6 +244,11 @@ h1 {
     width: 100%;
     height: auto;
     margin-top: 20px;
+  }
+
+  .apresentacao__projetos {
+    flex-direction: column;
+    padding: 5% 5%;
   }
 
   .roda-pe {
